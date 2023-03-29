@@ -1,0 +1,7 @@
+{
+  "name": "CADIZLOOP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
