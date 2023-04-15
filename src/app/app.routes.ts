@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { MainPagePage } from './main-page/main-page.page';
 
 export const routes: Routes = [
   {
@@ -7,7 +8,10 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
-    pathMatch: 'full',
+    component: MainPagePage
+  },
+  {
+    path: 'main-page',
+    loadComponent: () => import('./main-page/main-page.page').then( m => m.MainPagePage)
   },
 ];
